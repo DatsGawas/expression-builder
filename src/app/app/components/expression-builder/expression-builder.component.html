@@ -1,0 +1,17 @@
+<ng-container *ngIf="expressionCollection.length > 0">
+  <ng-container *ngFor="let expression of expressionCollection">
+    {{expression.name}}
+
+  </ng-container>
+</ng-container>
+<br>
+<input style="width: 70%" type="text" name="searchText" [ngModel]="filterValue" (ngModelChange)="inputEventHandle($event)">
+
+<amexio-treeview #treeRef
+  [data]="expressionData"
+  [word-wrap]="true"
+  [child-array-key]="childArrayKey"
+  [display-key]="displayKey"
+  (nodeClick)="nodeClickHandle($event)"
+>
+</amexio-treeview>
