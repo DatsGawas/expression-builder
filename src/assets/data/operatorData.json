@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Operator",
+    "fields": [
+      {
+        "id": "2318773-13CF-40E5-8AD6-0E07EBD3532",
+        "name": "+",
+        "dataLevel": "+",
+        "active": true
+      },
+      {
+        "id": "318773-13CF-40E5-8AD6-0E07EBD3532",
+        "name": "-",
+        "dataLevel": "-",
+        "active": true
+      },
+      {
+        "id": "18773-13CF-40E5-8AD6-0E07EBD3532",
+        "name": "*",
+        "dataLevel": "*",
+        "active": true
+      },
+      {
+        "id": "SS3-13CF-40E5-8AD6-0E07EBD3532",
+        "name": "/",
+        "dataLevel": "/",
+        "active": true
+      },
+      {
+        "id": "VDD-13CF-40E5-8AD6-0E07EBD3532",
+        "name": "%",
+        "dataLevel": "%",
+        "active": true
+      }
+    ]
+  }
+]

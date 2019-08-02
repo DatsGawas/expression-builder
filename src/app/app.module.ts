@@ -6,11 +6,13 @@ import { ExpressionBuilderComponent } from './app/components/expression-builder/
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { ExpressionDataComponent } from './app/components/expression-data/expression-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExpressionBuilderComponent
+    ExpressionBuilderComponent,
+    ExpressionDataComponent
   ],
   imports: [
     BrowserModule, AmexioWidgetModule, HttpClientModule, FormsModule

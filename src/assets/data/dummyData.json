@@ -216,26 +216,6 @@
       },
       {
         "primitiveType": "java.lang.String",
-        "name": "location",
-        "hiddenName": "location",
-        "fieldTypeId": "1",
-        "objectTypeId": null,
-        "description": null,
-        "javaType": null,
-        "referenceId": null,
-        "referenceType": null,
-        "value": null,
-        "dataLevel": null,
-        "collection": false,
-        "isSelected": null,
-        "active": null,
-        "bindValue": null,
-        "fields": [],
-        "primaryDisplay": "Location (DD)",
-        "typeName": "String"
-      },
-      {
-        "primitiveType": "java.lang.String",
         "name": "past12months",
         "hiddenName": "past12months",
         "fieldTypeId": "1",
@@ -330,36 +310,5 @@
     "functionBodyType": null,
     "innerFunctions": null,
     "sortJson": null
-  },
-  {
-    "name": "Operator",
-    "fields": [
-      {
-        "id": "2318773-13CF-40E5-8AD6-0E07EBD3532",
-        "name": "+",
-        "active": true
-      },
-      {
-        "id": "318773-13CF-40E5-8AD6-0E07EBD3532",
-        "name": "-",
-        "active": true
-      },
-      {
-        "id": "18773-13CF-40E5-8AD6-0E07EBD3532",
-        "name": "*",
-        "active": true
-      },
-      {
-        "id": "SS3-13CF-40E5-8AD6-0E07EBD3532",
-        "name": "/",
-        "active": true
-      },
-      {
-        "id": "VDD-13CF-40E5-8AD6-0E07EBD3532",
-        "name": "%",
-        "operatorName": "Greater than and equal to",
-        "active": true
-      }
-    ]
   }
 ]

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExpressionBuilderComponent } from './expression-builder.component';
+import { ExpressionDataComponent } from './expression-data.component';
 
-describe('ExpressionBuilderComponent', () => {
-  let component: ExpressionBuilderComponent;
-  let fixture: ComponentFixture<ExpressionBuilderComponent>;
+describe('ExpressionDataComponent', () => {
+  let component: ExpressionDataComponent;
+  let fixture: ComponentFixture<ExpressionDataComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExpressionBuilderComponent ]
+      declarations: [ ExpressionDataComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExpressionBuilderComponent);
+    fixture = TestBed.createComponent(ExpressionDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

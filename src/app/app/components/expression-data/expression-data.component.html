@@ -1,0 +1,22 @@
+<ul>
+  <li *ngFor="let d of data">
+    <b>{{d[displayKey]}}</b>
+    <ng-container *ngIf="(d.hasOwnProperty(childArrayKey) && d[childArrayKey].length > 0)">
+      <ul>
+        <li *ngFor="let c of d[childArrayKey]">
+          <ng-container *ngIf="(c.hasOwnProperty(childArrayKey) && c[childArrayKey].length > 0); else elseBlock">
+            <b>{{c[displayKey]}}</b>
+            <ul >
+              <li *ngFor="let x of c[childArrayKey]">
+                <span  (click)="innerItemSelect($event,d, c, x)">{{x[displayKey]}}</span>
+              </li>
+            </ul>
+          </ng-container>
+          <ng-template #elseBlock>
+            <span (click)="itemSelect($event, d, c)">{{c[displayKey]}}</span>
+          </ng-template>
+        </li>
+      </ul>
+    </ng-container>
+  </li>
+</ul>

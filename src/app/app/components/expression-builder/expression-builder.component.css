@@ -1,0 +1,15 @@
+.chips {
+  display: inline-block;
+  padding: 0 15px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  background-color: lightgrey;
+  margin: 3px;
+  color: black; }
+
+.chips:hover {
+  background: dodgerblue; }
+
+.chips label {
+  padding-top: 5px; }

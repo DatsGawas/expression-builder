@@ -1,17 +1,24 @@
 <ng-container *ngIf="expressionCollection.length > 0">
-  <ng-container *ngFor="let expression of expressionCollection">
-    {{expression.name}}
-
+  <ng-container *ngFor="let expression of expressionCollection; index as i">
+    <div class="chips">
+      <label>{{expression.dataLevel}}</label>
+    <em class="fa fa-times" (click)="removeItemHandle(expression, i)" style="cursor: pointer; margin-left:10px" ></em>
+    </div>
   </ng-container>
 </ng-container>
 <br>
-<input style="width: 70%" type="text" name="searchText" [ngModel]="filterValue" (ngModelChange)="inputEventHandle($event)">
+<input style="width: 70%;height: 20px"
+       (focus)="showExpressionData = true"
+       type="text" name="searchText"
+       (keydown)="addHardcodeValueHandle($event)"
+       [ngModel]="filterValue"
+       (ngModelChange)="inputEventHandle($event)">
 
-<amexio-treeview #treeRef
-  [data]="expressionData"
-  [word-wrap]="true"
-  [child-array-key]="childArrayKey"
-  [display-key]="displayKey"
-  (nodeClick)="nodeClickHandle($event)"
->
-</amexio-treeview>
+<div [style.display]="showExpressionData ? 'block': 'none'">
+  <app-expression-data [data]="expressionData"
+                       [child-array-key]="childArrayKey"
+                       [display-key]="displayKey"
+                       (nodeSelect)="nodeClickHandle($event)"
+  ></app-expression-data>
+</div>
+
